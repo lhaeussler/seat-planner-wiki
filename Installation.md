@@ -101,3 +101,7 @@ You’ll see a bunch of build messages, and if you’re lucky, you should now se
 Great! Now when you make changes to your app it will auto-reload.
 
 You can use yarn run electron:build command to create linux binaries.
+
+
+
+[Source](https://www.beekeeperstudio.io/blog/building-electron-windows-ubuntu-wsl2)
