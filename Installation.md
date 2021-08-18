@@ -103,6 +103,7 @@ Great! Now when you make changes to your app it will auto-reload.
 You can use yarn run electron:build command to create linux binaries.
 
 **Adding Bootstrap**
+
 For Better Design you may use some additional Frame such as Bootstrap-Vue.
 ```css
 # With npm
