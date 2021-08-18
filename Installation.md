@@ -1,0 +1,1 @@
+On Display installation make sure to chnage the Firewalls Settings regarding vcsrv otherwise no connection between wsl and your xlaunch Display Software will be established.
