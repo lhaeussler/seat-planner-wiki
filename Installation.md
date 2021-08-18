@@ -102,6 +102,28 @@ Great! Now when you make changes to your app it will auto-reload.
 
 You can use yarn run electron:build command to create linux binaries.
 
+**Adding Bootstrap**
+For Better Design you may use some additional Frame such as Bootstrap-Vue.
+```css
+# With npm
+npm install vue bootstrap bootstrap-vue
 
+# With yarn
+yarn add vue bootstrap bootstrap-vue
+```
+Then, register BootstrapVue in your app entry point (typically app.js or main.js):
+```css
+import Vue from 'vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+// Import Bootstrap an BootstrapVue CSS files (order is important)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
+```
 
 [Source](https://www.beekeeperstudio.io/blog/building-electron-windows-ubuntu-wsl2)
