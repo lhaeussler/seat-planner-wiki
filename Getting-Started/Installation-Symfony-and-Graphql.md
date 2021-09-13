@@ -89,6 +89,7 @@ Then call composer install from your command line. If you don't know how Compose
 
 
 **Adding Graphql to Symfony**
+
 Open a command console, enter your project directory and execute:
 ```css
 > composer require thecodingmachine/graphqlite-bundle
