@@ -1,6 +1,6 @@
 Install Symfony
+=========================
 **Technical Requirements**
-
 Before creating your first Symfony application you must:
 
 - Install PHP 7.2.5 or higher.
@@ -67,3 +67,14 @@ symfony server:start
 For additional information visit [https://symfony.com/doc/current/setup.html#start-coding](https://symfony.com/doc/current/setup.html#start-coding)
 
 **Adding Graphql**
+=========================
+**Basic Instalation**
+Open a command console, enter your project directory and execute:
+```css
+> composer require thecodingmachine/graphqlite-bundle
+```
+Now, go to the `config/packages/graphqlite.yaml` file and edit the namespaces to match your application.
+
+
+Original can be found her:
+[https://graphqlite.thecodingmachine.io/docs/symfony-bundle](https://graphqlite.thecodingmachine.io/docs/symfony-bundle)
