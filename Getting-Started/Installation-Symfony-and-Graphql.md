@@ -106,8 +106,8 @@ graphqlite:  namespace:    # The namespace(s) that will store your GraphQLite co
 ```
 ## Advanced configuration
 ### Customizing error handling
-You can add a "debug" section in the graphqlite.yaml file to customize the way errors are handled. By default, GraphQLite configures the underlying Webonyx GraphQL library this way:
--All exceptions that implement the ClientAware interface are caught by GraphQLite
+You can add a "debug" section in the `graphqlite.yaml` file to customize the way errors are handled. By default, GraphQLite configures the underlying Webonyx GraphQL library this way:
+-All exceptions that implement the `ClientAware` interface are caught by GraphQLite
 -All other exceptions will bubble up and by caught by Symfony error handling mechanism
 We found out those settings to be quite convenient but you can override those to your preference.
 ```css
@@ -115,8 +115,10 @@ config/packages/graphqlite.yaml
 graphqlite:  # ...  debug:    # Include exception messages in output when an error arises.    INCLUDE_DEBUG_MESSAGE: false    # Include stacktrace in output when an error arises.    INCLUDE_TRACE: false    # Exceptions are not caught by the engine and propagated to Symfony.    RETHROW_INTERNAL_EXCEPTIONS: false    # Exceptions that do not implement ClientAware interface are    # not caught by the engine and propagated to Symfony.    RETHROW_UNSAFE_EXCEPTIONS: true
 ```
 The debug parameters are detailed in the documentation of the Webonyx GraphQL library which is used internally by GraphQLite.
-**Do not put your GraphQL controllers in the** `App\Controller` namespace Symfony applies a particular compiler pass to classes in the `App\Controller` namespace. This compiler pass will prevent you from using input types. Put your controllers in another namespace. We advise using `App\GraphqlController.`
-The Symfony bundle come with a set of advanced features that are not described in this install documentation (like providing a login/logout mutation out of the box). Jump to the "Symfony specific features" documentation of GraphQLite if you want to learn more.
+
+
+>**Do not put your GraphQL controllers in the `App\Controller` namespace** Symfony applies a particular compiler pass to classes in the `App\Controller` namespace. This compiler pass will prevent you from using input types. Put your controllers in another namespace. We advise using `App\GraphqlController.`
+The Symfony bundle come with a set of advanced features that are not described in this install documentation (like providing a login/logout mutation out of the box). Jump to the "Symfony specific >features" documentation of GraphQLite if you want to learn more.
 
 
 
