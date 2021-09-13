@@ -87,6 +87,8 @@ Then call composer install from your command line. If you don't know how Compose
 Open a terminal in your current project directory and run:
 ```
 > composer require thecodingmachine/graphqlite-bundle
+#If there is an error use
+> composer require thecodingmachine/graphqlite-bundle --with-all-dependencies
 ```
 Enable the library by adding it to the list of registered bundles in the `app/AppKernel.php file`:
 ```css
