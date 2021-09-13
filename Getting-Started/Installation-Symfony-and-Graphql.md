@@ -1,6 +1,6 @@
 Install Symfony
 =========================
-**Technical Requirements**
+### Technical Requirements
 Before creating your first Symfony application you must:
 
 - Install PHP 7.2.5 or higher.
@@ -21,7 +21,7 @@ Before creating your first Symfony application you must:
 > wget https://get.symfony.com/cli/installer -O - | bash
 ```
 
-**Creating Symfony Applications**
+### Creating Symfony Applications
 
 Open your console terminal and run any of these commands to create a new Symfony application:
 ```css
@@ -44,7 +44,7 @@ If you’re not using the Symfony binary, run these commands to create the new S
 > composer create-project symfony/skeleton my_project_name
 ```
 
-**Setting up an Existing Symfony Project**
+### Setting up an Existing Symfony Project
 
 In addition to creating new Symfony projects, you will also work on projects already created by other developers. In that case, you only need to get the project code and install the dependencies with Composer. Assuming your team uses Git, setup your project with the following commands:
 ```css
@@ -52,8 +52,7 @@ In addition to creating new Symfony projects, you will also work on projects alr
 > composer install
 > composer update
 ```
-
-**Running Symfony Applications**
+### Running Symfony Applications
 
 In production, you should install a webserver like Nginx or Apache and configure it to run Symfony. This method can also be used if you’re not using the Symfony local web server for development.
 
@@ -66,9 +65,9 @@ symfony server:start
 
 For additional information visit [https://symfony.com/doc/current/setup.html#start-coding](https://symfony.com/doc/current/setup.html#start-coding)
 
-**Adding Doctrine and Graphql**
+Adding Doctrine and Graphql
 =========================
-**Doctrine Installation and Configuration**
+### Doctrine Installation and Configuration
 
 Doctrine can be installed with Composer.
 Define the following requirement in your `composer.json` file:
@@ -83,15 +82,10 @@ Define the following requirement in your `composer.json` file:
 ```
 Then call composer install from your command line. If you don't know how Composer works, check out their Getting Started to set up.
 
-
-
-
-
-
-**Adding Graphql to Symfony**
+###Adding Graphql to Symfony
 
 Open a command console, enter your project directory and execute:
-```css
+```
 > composer require thecodingmachine/graphqlite-bundle
 ```
 Now, go to the `config/packages/graphqlite.yaml` file and edit the namespaces to match your application.
