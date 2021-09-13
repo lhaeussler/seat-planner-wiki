@@ -88,20 +88,17 @@ Open a terminal in your current project directory and run:
 ```
 > composer require thecodingmachine/graphqlite-bundle
 ```
-Enable the library by adding it to the list of registered bundles in the app/AppKernel.php file:
+Enable the library by adding it to the list of registered bundles in the `app/AppKernel.php file`:
 ```css
-#app/AppKernel.php
 <?php
 class AppKernel extends Kernel{    public function registerBundles()    {        $bundles = array(            // other bundles...            new TheCodingMachine\GraphQLite\Bundle\GraphQLiteBundle,        );    }}
 ```
-Now, enable the "graphql/" route by editing the config/routes.yaml file:
+Now, enable the "graphql/" route by editing the `config/routes.yaml file`:
 ```css
-config/routes.yaml
 # Add these 2 lines to config/routes.yamlgraphqlite_bundle:  resource: '@GraphqliteBundle/Resources/config/routes.xml'
 ```
-Last but not least, create the configuration file at config/packages/graphqlite.yaml:
+Last but not least, create the configuration file at `config/packages/graphqlite.yaml`:
 ```
-config/packages/graphqlite.yaml
 graphqlite:  namespace:    # The namespace(s) that will store your GraphQLite controllers.    # It accept either a string or a list of strings.    controllers: App\GraphqlController\    # The namespace(s) that will store your GraphQL types and factories.    # It accept either a string or a list of strings.    types:    - App\Types\    - App\Entity\
 ```
 ## Advanced configuration
@@ -111,7 +108,6 @@ You can add a "debug" section in the `graphqlite.yaml` file to customize the way
 -All other exceptions will bubble up and by caught by Symfony error handling mechanism
 We found out those settings to be quite convenient but you can override those to your preference.
 ```css
-config/packages/graphqlite.yaml
 graphqlite:  # ...  debug:    # Include exception messages in output when an error arises.    INCLUDE_DEBUG_MESSAGE: false    # Include stacktrace in output when an error arises.    INCLUDE_TRACE: false    # Exceptions are not caught by the engine and propagated to Symfony.    RETHROW_INTERNAL_EXCEPTIONS: false    # Exceptions that do not implement ClientAware interface are    # not caught by the engine and propagated to Symfony.    RETHROW_UNSAFE_EXCEPTIONS: true
 ```
 The debug parameters are detailed in the documentation of the Webonyx GraphQL library which is used internally by GraphQLite.
