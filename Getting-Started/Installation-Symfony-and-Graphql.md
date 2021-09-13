@@ -1,3 +1,4 @@
+Install Symfony
 **Technical Requirements**
 
 Before creating your first Symfony application you must:
@@ -64,3 +65,5 @@ symfony server:start
 ```
 
 For additional information visit [https://symfony.com/doc/current/setup.html#start-coding](https://symfony.com/doc/current/setup.html#start-coding)
+
+**Adding Graphql**
