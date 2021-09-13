@@ -127,4 +127,6 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 ```
 
-[Source](https://www.beekeeperstudio.io/blog/building-electron-windows-ubuntu-wsl2)
+For additional Information and original instructions Visit:
+[https://www.beekeeperstudio.io/blog/building-electron-windows-ubuntu-wsl2](https://www.beekeeperstudio.io/blog/building-electron-windows-ubuntu-wsl2)
+[https://bootstrap-vue.org/docs](https://bootstrap-vue.org/docs)
