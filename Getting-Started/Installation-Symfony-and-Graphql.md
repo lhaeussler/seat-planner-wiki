@@ -66,9 +66,29 @@ symfony server:start
 
 For additional information visit [https://symfony.com/doc/current/setup.html#start-coding](https://symfony.com/doc/current/setup.html#start-coding)
 
-**Adding Graphql**
+**Adding Doctrine and Graphql**
 =========================
-**Basic Instalation**
+**Doctrine Installation and Configuration**
+
+Doctrine can be installed with Composer.
+Define the following requirement in your `composer.json` file:
+```css
+{
+    "require-dev": {
+        "symfony/web-server-bundle": "^4.4",
+        "doctrine/orm": "*"
+        
+    }
+}
+```
+Then call composer install from your command line. If you don't know how Composer works, check out their Getting Started to set up.
+
+
+
+
+
+
+**Adding Graphql to Symfony**
 Open a command console, enter your project directory and execute:
 ```css
 > composer require thecodingmachine/graphqlite-bundle
