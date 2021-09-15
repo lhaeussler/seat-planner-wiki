@@ -60,7 +60,7 @@ However for local development, the most convenient way of running Symfony is by 
 
 Open your console terminal, move into your new project directory and start the local web server as follows:
 ```bash
-symfony server:start
+> symfony server:start
 ```
 
 For additional information visit [https://symfony.com/doc/current/setup.html#start-coding](https://symfony.com/doc/current/setup.html#start-coding)
