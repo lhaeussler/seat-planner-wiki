@@ -10,7 +10,7 @@ If you want a particular version of MySQL, replace `latest` with the version num
 ![](uploads/fc34c85345f7201539cc59be3c0deab2/download-mysql-docker-image.png)
 Verify the image is now stored locally by listing the downloaded Docker images:
 ```bash
-> sudo docker images
+> docker images
 ```
 
 The output should include mysql/mysql-server among the listed images.
@@ -19,7 +19,7 @@ The output should include mysql/mysql-server among the listed images.
 ### Deploy the MySQL Container
 Once you have the image, move on to deploying a new MySQL container with:
 ```bash
-> docker run -p 127.0.0.1:[Port]:3306/tcp --name=[image_name] -e MYSQL_ROOT_PASSWORD=[password] -d mysql/mysqlserver:latest
+> docker run -p [Port]:3306/tcp --name=[image_name] -e MYSQL_ROOT_HOST='%' -e MYSQL_ROOT_PASSWORD=[password] -d mysql/mysqlserver:latest
 ```
 
 - Replace [container_name] with the name of your choice. If you do not provide a name, Docker generates a random one.
