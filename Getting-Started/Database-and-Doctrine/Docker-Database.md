@@ -55,8 +55,6 @@ If everything went well you could see the running container using the previus co
 ## Access PhpMyAdmin
 Yes, that's all…everything is done! Easy right? You only need to open your favourite browser and type the following url: http://localhost:[yourPhpMyadminPort]/ so your instance of phpMyAdmin will show up. To access, type root as username and the password you established in the step one when running the mysql container (if you followed the tutorial the password is mypass123).
 
-A few helpfull sites this is based on:
-- https://symfony.com/doc/current/doctrine.html
-- https://migueldoctor.medium.com/run-mysql-phpmyadmin-locally-in-3-steps-using-docker-74eb735fa1fc
+A few helpfull sites this is based on:- https://migueldoctor.medium.com/run-mysql-phpmyadmin-locally-in-3-steps-using-docker-74eb735fa1fc
 - https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose
 - https://phoenixnap.com/kb/mysql-docker-container
