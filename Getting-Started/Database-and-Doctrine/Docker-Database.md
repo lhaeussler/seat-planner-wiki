@@ -55,38 +55,6 @@ If everything went well you could see the running container using the previus co
 ## Access PhpMyAdmin
 Yes, that's all…everything is done! Easy right? You only need to open your favourite browser and type the following url: http://localhost:[yourPhpMyadminPort]/ so your instance of phpMyAdmin will show up. To access, type root as username and the password you established in the step one when running the mysql container (if you followed the tutorial the password is mypass123).
 
-
-## Installing Doctrine
-First, install Doctrine support via the orm Symfony pack, as well as the MakerBundle, which will help generate some code:
-
-```bash
-> composer require symfony/orm-pack
-> composer require --dev symfony/maker-bundle
-```
-
-### Configuring the Database
-The database connection information is stored as an environment variable called `DATABASE_URL`. For development, you can find and customize this inside `.env` in your main directory:
-```css
-# customize this line!
-DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"
-
-# to use mariadb:
-DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=mariadb-10.5.8"
-
-# to use sqlite:
-# DATABASE_URL="sqlite:///%kernel.project_dir%/var/app.db"
-
-# to use postgresql:
-# DATABASE_URL="postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8"
-
-# to use oracle:
-# DATABASE_URL="oci8://db_user:db_password@127.0.0.1:1521/db_name"
-```
-
-> If the username, password, host or database name contain any character considered special in a URI (such as +, @, $, #, /, :, *, !), you must encode them. See RFC 3986 for the full list of reserved characters or use the urlencode function to encode them. In this case you need to remove the resolve: prefix in > config/packages/doctrine.yaml to avoid errors: url: '%env(resolve:DATABASE_URL)%'
-```bash 
-> php bin/console doctrine:database:create
-```
 A few helpfull sites this is based on:
 - https://symfony.com/doc/current/doctrine.html
 - https://migueldoctor.medium.com/run-mysql-phpmyadmin-locally-in-3-steps-using-docker-74eb735fa1fc
