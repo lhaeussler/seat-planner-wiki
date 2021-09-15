@@ -4,12 +4,12 @@ Install Symfony
 Before creating your first Symfony application you must:
 
 - Install PHP 7.2.5 or higher.
-```css
+```bash
 > sudo apt install php7.4-{sqlite,xml,mbstring}
 ```
 - Install Composer, which is used to install PHP packages.
 
-```css 
+```bash 
 > php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 > php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 > php composer-setup.php
@@ -17,14 +17,14 @@ Before creating your first Symfony application you must:
 ```
 - Install Symfony
 
-```css
+```bash
 > wget https://get.symfony.com/cli/installer -O - | bash
 ```
 
 ### Creating Symfony Applications
 
 Open your console terminal and run any of these commands to create a new Symfony application:
-```css
+```bash
 # Full application
 > symfony new my_project_name --full
 # Microservice
@@ -37,7 +37,7 @@ The Symfony Demo Application is a fully-functional application that shows the re
 
 
 If you’re not using the Symfony binary, run these commands to create the new Symfony application using Composer
-```css
+```bash
 # Composer for Full Version
 > composer create-project symfony/website-skeleton my_project_name
 # Composer for Demo And Microservice Build
@@ -47,7 +47,7 @@ If you’re not using the Symfony binary, run these commands to create the new S
 ### Setting up an Existing Symfony Project
 
 In addition to creating new Symfony projects, you will also work on projects already created by other developers. In that case, you only need to get the project code and install the dependencies with Composer. Assuming your team uses Git, setup your project with the following commands:
-```css
+```bash
 > cd /my_project_name
 > composer install
 > composer update
@@ -59,7 +59,7 @@ In production, you should install a webserver like Nginx or Apache and configure
 However for local development, the most convenient way of running Symfony is by using the local web server provided by the symfony binary. This local server provides among other things support for HTTP/2, concurrent requests, TLS/SSL and automatic generation of security certificates.
 
 Open your console terminal, move into your new project directory and start the local web server as follows:
-```css
+```bash
 symfony server:start
 ```
 
@@ -71,7 +71,7 @@ Adding Doctrine and Graphql
 
 Doctrine can be installed with Composer.
 Define the following requirement in your `composer.json` file:
-```css
+```bash
 {
     "require-dev": {
         "symfony/web-server-bundle": "^4.4",
@@ -85,7 +85,7 @@ Then call composer install from your command line. If you don't know how Compose
 ### Adding Graphql to Symfony
 
 Open a terminal in your current project directory and run:
-```
+```bash
 > composer require thecodingmachine/graphqlite-bundle
 #If there is an error use
 > composer require thecodingmachine/graphqlite-bundle --with-all-dependencies
