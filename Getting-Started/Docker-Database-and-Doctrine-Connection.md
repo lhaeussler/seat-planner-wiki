@@ -87,3 +87,5 @@ DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=m
 
 
 https://symfony.com/doc/current/doctrine.html
+https://migueldoctor.medium.com/run-mysql-phpmyadmin-locally-in-3-steps-using-docker-74eb735fa1fc
+https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose
