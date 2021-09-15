@@ -1,32 +1,32 @@
 **Basic Development Tools**
 
 This is easy, we’re in Ubuntu! Lets just install a bunch of things we know we’ll need.
-```css
-sudo apt update # this takes a while the first time
-sudo apt install nodejs git npm # ~200mb of packages
-sudo npm install -g yarn # Yarn is so much faster
+```bash
+> sudo apt update # this takes a while the first time
+> sudo apt install nodejs git npm # ~200mb of packages
+> sudo npm install -g yarn # Yarn is so much faster
 ```
 **Setting up Electron**
 
 Then lets make a quick Electron project. I think the easiest way to make an Electron app is with Vue.js, the Vue CLI, and the Vue Cli Electron Builder plugin. Let’s go.
 
-```css
+```bash
 # system libraries needed for electron
-sudo apt install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
+> sudo apt install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
 # install vue cli
-sudo yarn global add @vue/cli
+> sudo yarn global add @vue/cli
 
 # create a project.
 # follow instructions here https://cli.vuejs.org/guide/creating-a-project.html#vue-create
-vue create --default my_app
+> vue create --default my_app
 cd my_app
-vue add electron-builder
+> vue add electron-builder
 # install dependencies
-yarn install
+> yarn install
 
 # That's it!! We have a fully working electorn app. Lets run it:
 
-yarn run electron:serve
+> yarn run electron:serve
 
 # NOTHING HAPPENS!? Where's the app window?
 # There's no way for Ubuntu or Windows to display it!
@@ -61,18 +61,18 @@ Save your config in your home directory for eash launching, then start the serve
 
 **WSL Config**
 
-```css
+```bash
 # Add the following lines to your ~/.bashrc file:
 
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-export LIBGL_ALWAYS_INDIRECT=true
+> export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+> export LIBGL_ALWAYS_INDIRECT=true
 ```
 To test that you have everything working, you can try starting an app. Lets try the basic x11 apps to make sure everything is working.
 
-```css
-sudo apt install x11-apps
+```bash
+> sudo apt install x11-apps
 
-xcalc
+> xcalc
 ```
 You should see the gorgeous x11 calc window.
 
@@ -91,8 +91,8 @@ After you enabled every Firewall rule as following a Display Connection should b
 ![](uploads/a32d5aaf749912622dc1cf0d7f539246/Screenshot_21.png)
 
 Now we can run our electron dev server again.
-```css
-yarn run electron:serve
+```bash
+> yarn run electron:serve
 ```
 You’ll see a bunch of build messages, and if you’re lucky, you should now see your Electron app in all it’s glory
 
@@ -105,12 +105,12 @@ You can use yarn run electron:build command to create linux binaries.
 **Adding Bootstrap**
 
 For Better Design you may use some additional Frame such as Bootstrap-Vue.
-```css
+```bash
 # With npm
-npm install vue bootstrap bootstrap-vue
+> npm install vue bootstrap bootstrap-vue
 
 # With yarn
-yarn add vue bootstrap bootstrap-vue
+> yarn add vue bootstrap bootstrap-vue
 ```
 Then, register BootstrapVue in your app entry point (typically app.js or main.js):
 ```css
