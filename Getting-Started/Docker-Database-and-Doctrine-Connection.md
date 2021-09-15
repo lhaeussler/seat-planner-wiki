@@ -86,6 +86,8 @@ DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=m
 > If the username, password, host or database name contain any character considered special in a URI (such as +, @, $, #, /, :, *, !), you must encode them. See RFC 3986 for the full list of reserved characters or use the urlencode function to encode them. In this case you need to remove the resolve: prefix in > config/packages/doctrine.yaml to avoid errors: url: '%env(resolve:DATABASE_URL)%'
 
 
+A few helpfull sites this is based on:
 https://symfony.com/doc/current/doctrine.html
 https://migueldoctor.medium.com/run-mysql-phpmyadmin-locally-in-3-steps-using-docker-74eb735fa1fc
 https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose
+https://phoenixnap.com/kb/mysql-docker-container
