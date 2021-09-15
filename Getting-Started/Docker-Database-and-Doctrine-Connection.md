@@ -1,7 +1,16 @@
-## Installing Doctrine
+
+### Pull the MySQL Docker Image
+Start by pulling the appropriate Docker image for MySQL. You can download a specific version or opt for the latest release as seen in the following command:
+```bash
+sudo docker pull mysql/mysql-server:latest
+```
+If you want a particular version of MySQL, replace `latest` with the version number.
+
+
+### Installing Doctrine
 First, install Doctrine support via the orm Symfony pack, as well as the MakerBundle, which will help generate some code:
 
-```css
+```bash
 > composer require symfony/orm-pack
 > composer require --dev symfony/maker-bundle
 ```
