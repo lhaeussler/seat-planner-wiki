@@ -1,5 +1,3 @@
-Install Symfony
-=========================
 ### Technical Requirements
 Before creating your first Symfony application you must:
 
