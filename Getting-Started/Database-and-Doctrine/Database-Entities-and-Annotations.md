@@ -60,6 +60,11 @@ Simply head to http://localhost:8000/graphiql
 ### Mutations
 
 Bla Bla Blaaa bla Blaaaa
+
+
+
+
+
 Additional Inforamtion and Source here:
 - https://graphqlite.thecodingmachine.io/docs/queries
 - https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/tutorials/getting-started.html#entity-repositories
