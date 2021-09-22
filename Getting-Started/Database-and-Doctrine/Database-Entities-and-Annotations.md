@@ -25,9 +25,11 @@ To generate the missing getter/setter methods (or to create the classes if neces
 ```
 You can now find the new ontroller in your src/controller directory. Please consider creating a new folder `/graphqlcontroller` or `/graphql/controller` an moving your newly created Controller there to prevent issues. Once everthing is moved properly you can start putting in your Queries and Mutations.
 
+### Doctrine Queries
 To get started we can write our first Query
 
 >In GraphQLite, GraphQL queries are created by writing methods in controller classes.
+Queries are basically used to print or write out values. They cannot change any Objects ins your database.
 Those classes must be in the controllers namespaces which has been defined when you configured >GraphQLite. For instance, in Symfony, the controllers namespace is App\Controller by default.
 
 ```php
@@ -55,6 +57,9 @@ Simply head to http://localhost:8000/graphiql
 
 ![](uploads/f9918a21c1125f31d935452c1a14ce90/query1-5a22bbe2398efcc725ea571a07ff2c9b.png)
 
+### Mutations
+
+Bla Bla Blaaa bla Blaaaa
 Additional Inforamtion and Source here:
 - https://graphqlite.thecodingmachine.io/docs/queries
 - https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/tutorials/getting-started.html#entity-repositories
