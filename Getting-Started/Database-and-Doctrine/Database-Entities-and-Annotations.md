@@ -30,7 +30,7 @@ To get started we can write our first Query
 
 >In GraphQLite, GraphQL queries are created by writing methods in controller classes.
 Queries are basically used to print or write out values. They cannot change any Objects ins your database.
-Those classes must be in the controllers namespaces which has been defined when you configured >GraphQLite. For instance, in Symfony, the controllers namespace is App\Controller by default.
+Those classes must be in the controllers namespaces which has been defined when you configured GraphQLite. For instance, in Symfony, the controllers namespace is App\Controller by default.
 
 ```php
 namespace App\Controller;
