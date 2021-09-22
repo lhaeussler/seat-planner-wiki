@@ -54,3 +54,7 @@ Simply head to http://localhost:8000/graphiql
 > Your Port may vary!
 
 ![](uploads/f9918a21c1125f31d935452c1a14ce90/query1-5a22bbe2398efcc725ea571a07ff2c9b.png)
+
+Additional Inforamtion and Source here:
+- https://graphqlite.thecodingmachine.io/docs/queries
+- https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/tutorials/getting-started.html#entity-repositories
