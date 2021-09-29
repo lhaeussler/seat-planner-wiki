@@ -1,3 +1,4 @@
 - https://symfony.com/doc/current/doctrine/reverse_engineering.html
 - https://symfony.com/doc/current/doctrine.html#configuring-the-database
 - https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose
+- https://devblogs.microsoft.com/azure-sdk/vue-js-user-authentication/
